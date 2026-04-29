@@ -10,14 +10,14 @@ An AI-powered image classifier that identifies landscape categories from uploade
 ## Requirements
 
 - Python 3.11 (TensorFlow does not support Python 3.12+ yet)
-- `model.h5` must be present in the root directory (not included in the repo due to file size)
+- `model.h5` is included in the repository
 
 ## Setup
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Gilliooo/LandscapeClassifier.git
+git clone https://github.com/kenzitjandra/LandscapeClassifier.git
 cd LandscapeClassifier
 ```
 
@@ -45,23 +45,13 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 5. Add the model file
-
-Place `model.h5` in the project root directory. The model should be a Keras `.h5` file trained on 150x150 RGB images with 6 output classes.
-
 ## Running the App
-
-### Start the Flask backend
 
 ```bash
 python app.py
 ```
 
-The API will be available at `http://127.0.0.1:5000`.
-
-### Open the frontend
-
-Open `web/index.html` directly in your browser. Upload an image and click **Classify Image**.
+Then open `http://localhost:5000` in your browser. Upload an image and click **Classify Image**.
 
 ## Project Structure
 
